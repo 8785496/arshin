@@ -8,7 +8,7 @@ if (isset($_REQUEST['email'])) {
     $name = $_REQUEST['first_name'];
     $email = $_REQUEST['email'];
     $message = $_REQUEST['message'];
-    $subject = 'E-mail from site 2136340.xyz';
+    $subject = 'E-mail from site аршин-нск.рф';
     try {
         $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
         $sql = "INSERT INTO email (email, name, subject, body, time) "
@@ -21,6 +21,7 @@ if (isset($_REQUEST['email'])) {
         $query->bindValue(':time', (new DateTime())->format('Y-m-d H:i:s'));
         if ($query->execute()) {
             $body = "Сообщение: $message\n" .
+                "Name: $name\n" .
                 "E-mail: $email\n";
             $message = Swift_Message::newInstance($subject)
                 ->setBody($body)
