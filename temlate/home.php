@@ -42,7 +42,7 @@
                     <a class="navbar-brand" href="/">
                         <!--<img src="images/logo.png" alt="company logo" />-->
                         <span style="color: white">
-                            <b>Аршинъ</b>, кадастровые работы<br>
+                            Кадастровый инженер<br>
                             г. Новосибирск, тел. 213-63-40
                         </span>
                     </a>
@@ -67,7 +67,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="text-center">
-                                    <h3 style="text-transform: none"><b>Аршинъ</b>, компания кадастровых работ</h3>
+                                    <h3 style="text-transform: none">Кадастровая служба Новосибирска</h3>
                                 </div>
                             </div>
                         </div>
@@ -340,20 +340,26 @@
                                     <div class="form-group">
                                         <i class="fa fa-2x fa-map-marker"></i>
                                         <span class="text">
-                                            <a href="#location" id="adress">ул. Немировича-Данченко, д. 167, оф. 223</a>
+                                            <a href="#location" id="adress">Красный проспект, д. 220, корп. 1, оф. 434 Б</a>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="col-md-12 height-contact-element">
                                     <div class="form-group">
                                         <i class="fa fa-2x fa-phone"></i>
-                                        <span class="text">(383) 213-63-40,&nbsp;&nbsp;&nbsp;&nbsp;+7 (913) 958–54–64</span>
+                                        <span class="text">(383) 213-63-40,&nbsp;&nbsp;&nbsp;&nbsp;+7 (963) 946–46–71</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 height-contact-element">
+                                    <div class="form-group">
+                                        <i class="fa fa-2x fa-phone"></i>
+                                        <span class="text">Whatsapp: +7 (983) 302-57-65</span>
                                     </div>
                                 </div>
                                 <div class="col-md-12 height-contact-element">    
                                     <div class="form-group">
                                         <i class="fa fa-2x fa-envelope"></i>
-                                        <span class="text"><a href="malito:kadastr_rabot@mail.ru">kadastr_rabot@mail.ru</a></span>
+                                        <span class="text"><a href="malito:mail@kadserv.ru">mail@kadserv.ru</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -364,26 +370,26 @@
         </section>
 
         <!-- Подпишитесь на нас -->
-        <section id="follow-us">
-            <div class="container"> 
-                <div class="text-center height-contact-element">
-                    <h2>Подпишитесь на нас</h2>
-                </div>
-                <img class="img-responsive displayed" src="/images/short.png" alt="short" />
-                <div class="text-center height-contact-element">
-                    <ul class="list-unstyled list-inline list-social-icons">
-                        <li class="active"><a href="http://vk.com/kadastr_nsk"><i class="fa fa-vk social-icons"></i></a></li>
-                        <li class="active"><a href="https://plus.google.com/+2136340Xyz"><i class="fa fa-google-plus social-icons"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+<!--        <section id="follow-us">-->
+<!--            <div class="container"> -->
+<!--                <div class="text-center height-contact-element">-->
+<!--                    <h2>Подпишитесь на нас</h2>-->
+<!--                </div>-->
+<!--                <img class="img-responsive displayed" src="/images/short.png" alt="short" />-->
+<!--                <div class="text-center height-contact-element">-->
+<!--                    <ul class="list-unstyled list-inline list-social-icons">-->
+<!--                        <li class="active"><a href=""><i class="fa fa-vk social-icons"></i></a></li>-->
+<!--                        <li class="active"><a href=""><i class="fa fa-google-plus social-icons"></i></a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
         <!-- Footer -->
         <footer id="footer">
             <div class="container">
                 <div class="row myfooter">
                     <div class="col-sm-6"><div class="pull-left">
-                            &copy; аршин-нск.рф 2017
+                            &copy; kadserv.ru 2018
                         </div></div>
                     <div class="col-sm-6">
                         <div class="pull-right">Дизайн <a href="http://www.atis.al">ATIS</a></div>
@@ -536,17 +542,17 @@
 
             function init() {
                 myMap = new ymaps.Map("location", {
-                    center: [54.9889387801133, 82.91283849999989],
+                    center: [55.067841, 82.911291],
                     zoom: 16,
                     controls: ['zoomControl']
                 });
                 myGeoObject = new ymaps.GeoObject({
                     geometry: {
                         type: "Point",
-                        coordinates: [54.9889387801133, 82.91283849999989]
+                        coordinates: [55.067841, 82.911291                        ]
                     },
                     properties: {
-                        iconContent: 'Кадастровый инженер',
+                        iconContent: 'Кадастровая служба',
                         hintContent: 'Кадастровые работы, услуги БТИ'
                     }
                 }, {

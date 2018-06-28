@@ -5,7 +5,7 @@ require __DIR__ . '/../php/mailer.php';
 
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-    $admin_email = "kadastr_rabot@mail.ru";
+    $admin_email = "mail@kadserv.ru";
     
     if (isset($_POST['name'])) {
         $name = trim($_POST['name']);

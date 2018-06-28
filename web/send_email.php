@@ -4,7 +4,7 @@ require __DIR__ . '/../php/db.php';
 require __DIR__ . '/../php/mailer.php';
 
 if (isset($_REQUEST['email'])) {
-    $admin_email = "kadastr_rabot@mail.ru";
+    $admin_email = "mail@kadserv.ru";
     $name = $_REQUEST['first_name'];
     $email = $_REQUEST['email'];
     $message = $_REQUEST['message'];

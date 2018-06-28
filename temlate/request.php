@@ -254,26 +254,26 @@
         </section>
 
         <!-- Подпишитесь на нас -->
-        <section id="follow-us">
-            <div class="container"> 
-                <div class="text-center height-contact-element">
-                    <h2>Подпишитесь на нас</h2>
-                </div>
-                <img class="img-responsive displayed" src="/images/short.png" alt="short" />
-                <div class="text-center height-contact-element">
-                    <ul class="list-unstyled list-inline list-social-icons">
-                        <li class="active"><a href="http://vk.com/kadastr_nsk"><i class="fa fa-vk social-icons"></i></a></li>
-                        <li class="active"><a href="https://plus.google.com/+2136340Xyz"><i class="fa fa-google-plus social-icons"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+<!--        <section id="follow-us">-->
+<!--            <div class="container"> -->
+<!--                <div class="text-center height-contact-element">-->
+<!--                    <h2>Подпишитесь на нас</h2>-->
+<!--                </div>-->
+<!--                <img class="img-responsive displayed" src="/images/short.png" alt="short" />-->
+<!--                <div class="text-center height-contact-element">-->
+<!--                    <ul class="list-unstyled list-inline list-social-icons">-->
+<!--                        <li class="active"><a href=""><i class="fa fa-vk social-icons"></i></a></li>-->
+<!--                        <li class="active"><a href=""><i class="fa fa-google-plus social-icons"></i></a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
 
         <footer id="footer">
             <div class="container">
                 <div class="row myfooter">
                     <div class="col-sm-6"><div class="pull-left">
-                            &copy; 2136340.xyz 2016
+                            &copy; kadserv.ru 2018
                         </div></div>
                     <div class="col-sm-6">
                         <div class="pull-right">Designed by <a href="http://www.atis.al">ATIS</a></div>
