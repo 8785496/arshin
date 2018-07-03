@@ -117,8 +117,8 @@
                                     </a>
                                 </div>
                                 <div class="col-xs-3">
-                                    <a href="/images/certificate_2017_800.jpg" title="Свидетельство" data-gallery="">
-                                        <img style="height: 100%; width: 100%" src="/images/certificate_2017_400.jpg" alt="Свидетельство">
+                                    <a href="/images/certificate_2018_800.jpg" title="Свидетельство" data-gallery="">
+                                        <img style="height: 100%; width: 100%" src="/images/certificate_2018_400.jpg" alt="Свидетельство">
                                     </a>
                                 </div>
                             </div>
@@ -352,8 +352,8 @@
                                 </div>
                                 <div class="col-md-12 height-contact-element">
                                     <div class="form-group">
-                                        <i class="fa fa-2x fa-phone"></i>
-                                        <span class="text">Whatsapp: +7 (983) 302-57-65</span>
+                                        <i class="fa fa-2x fa-whatsapp"></i>
+                                        <span class="text">+7 (963) 946–46–71</span>
                                     </div>
                                 </div>
                                 <div class="col-md-12 height-contact-element">    
