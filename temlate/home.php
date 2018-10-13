@@ -435,15 +435,17 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="modal_email">E-mail</label>
-                                <input id="modal_email" name="email" type="email" class="form-control btn-noborder-radius"
-                                       style="color: #313131" maxlength="64">
-                            </div>
-                            <div class="text-center">или</div>
-                            <div class="form-group">
                                 <label for="modal_phone">Телефон</label>
                                 <input id="modal_phone" name="phone" type="text" class="form-control btn-noborder-radius"
                                        style="color: #313131" maxlength="32">
+                            </div>
+
+                            <div class="text-center">или</div>
+
+                            <div class="form-group">
+                                <label for="modal_email">E-mail</label>
+                                <input id="modal_email" name="email" type="email" class="form-control btn-noborder-radius"
+                                       style="color: #313131" maxlength="64">
                             </div>
 
                             <div class="form-group">
@@ -633,7 +635,7 @@
                             $('#modal_error').text('Не возможно отправить данные на сервер. Пожалуйста, попробуйте позже.');
                             $('#modal_send').prop('disabled', false);
                         },
-                        data: $('#modal_form').serialize(),
+                        data: new FormData($('#modal_form')[0]),
                         type: 'POST',
                         url: '/send_request.php'
                     });
