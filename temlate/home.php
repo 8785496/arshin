@@ -76,10 +76,11 @@
                 </li>
             </ul>
             <div class="intro-scroller">
-                <a class="btn btn-lg btn-custom btn-noborder-radius" href="/request" style="width: auto; color: white">
-                    Узнать стоимость работ
-                </a>
-            </div>          
+                <button class="btn btn-lg btn-custom btn-noborder-radius" data-toggle="modal" data-target="#myModal"
+                        style="width: auto; color: white">
+                    Получить скидку 10%
+                </button>
+            </div>
         </header>
 
         <!-- Преимущества -->
@@ -99,7 +100,7 @@
                                         - за качество работы несет ответственность лично кадастровый инженер;<br>
                                         - кадастровый инженер дорожит свой репутацией, т.к. не может открыться под другим названием;<br>
                                         - всегда можно договориться о цене.<br>
-                                        <span class="color-elements">Специальные условия для постоянных клиентов.</span><br>
+                                        <strong class="color-elements">Для новых клиентов скидка <span class="badge">10%</span></strong><br>
                                         Имеются все необходимые документы для осуществления деятельности.
                                     </p>                                    
 
@@ -132,7 +133,15 @@
         <section id="services">
             <div class="orangeback">
                 <div class="container">
-                    <div class="text-center homeport2"><h2>Услуги</h2></div>
+                    <div class="text-center homeport2" style="margin-bottom: 25px"><h2>Услуги</h2></div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a class="btn btn-lg btn-custom btn-noborder-radius" href="/request"
+                               style="width: auto; color: white; border: 1px solid white">
+                                Узнать стоимость работ
+                            </a>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-12 homeservices1">
                             <div class="col-md-3 portfolio-item">
@@ -407,6 +416,52 @@
             <!--<a class="play-pause"></a>-->
             <ol class="indicator"></ol>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             style="background-color: rgba(0, 0, 0, 0.5)">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="border-radius: 0; min-width: 400px; overflow-y: auto;">
+                    <div class="modal-body">
+                        <form id="modal_form">
+                            <div id="modal_success" class="text-success" style="margin-bottom: 10px"></div>
+
+                            <div id="modal_error" class="text-danger" style="margin-bottom: 10px"></div>
+
+                            <div class="form-group">
+                                <label for="modal_name">Фамилия Имя Отчество *</label>
+                                <input id="modal_name" name="name" type="text" class="form-control btn-noborder-radius"
+                                       style="color: #313131" maxlength="64">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="modal_email">E-mail</label>
+                                <input id="modal_email" name="email" type="email" class="form-control btn-noborder-radius"
+                                       style="color: #313131" maxlength="64">
+                            </div>
+                            <div class="text-center">или</div>
+                            <div class="form-group">
+                                <label for="modal_phone">Телефон</label>
+                                <input id="modal_phone" name="phone" type="text" class="form-control btn-noborder-radius"
+                                       style="color: #313131" maxlength="32">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="modal_description">Описание</label>
+                                <input id="modal_description" name="description" class="form-control btn-noborder-radius" type="text"
+                                       style="color: #313131" maxlength="1024">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="modal_send" class="btn btn-primary btn-noborder-radius">Отправить заявку</button>
+                        <button type="button" class="btn btn-default btn-noborder-radius" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
         <!-- Bootstrap Core JavaScript -->
@@ -532,6 +587,56 @@
                         return false;
                     }
                     return false;
+                });
+            });
+        </script>
+        <!-- Send modal request -->
+        <script>
+            $(document).ready(function() {
+                $('#modal_send').click(function() {
+                    var name = $('#modal_name').val();
+                    var email = $('#modal_email').val();
+                    var phone = $('#modal_phone').val();
+
+                    var isInvalid = false;
+                    var message = '';
+
+                    if (!name || name.trim() === '') {
+                        isInvalid = true;
+                        message = 'Заполните Имя.';
+                    } else if (!email && !phone) {
+                        isInvalid = true;
+                        message = 'Заполните телефон или E-mail.';
+                    }
+
+                    if (isInvalid) {
+                        $('#modal_error').text(message);
+                        return;
+                    }
+
+                    $.ajax({
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        beforeSend: function () {
+                            $('#modal_send').prop('disabled', true);
+                        },
+                        success: function (response) {
+                            if (response == 1) {
+                                $('#modal_success').text('Ваш запрос успешно отправлен.');
+                            } else {
+                                $('#modal_error').text('Запрос не был отправлен. Пожалуйста, попробуйте еще раз!');
+                                $('#modal_send').prop('disabled', false);
+                            }
+                        },
+                        error: function (e) {
+                            $('#modal_error').text('Не возможно отправить данные на сервер. Пожалуйста, попробуйте позже.');
+                            $('#modal_send').prop('disabled', false);
+                        },
+                        data: $('#modal_form').serialize(),
+                        type: 'POST',
+                        url: '/send_request.php'
+                    });
                 });
             });
         </script>
