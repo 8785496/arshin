@@ -100,7 +100,7 @@
                                         - за качество работы несет ответственность лично кадастровый инженер;<br>
                                         - кадастровый инженер дорожит свой репутацией, т.к. не может открыться под другим названием;<br>
                                         - всегда можно договориться о цене.<br>
-                                        <strong class="color-elements">Для новых клиентов скидка <span class="badge">10%</span></strong><br>
+                                        <strong class="color-elements">При заказе от двух объектов скидка <span class="badge">10%</span></strong><br>
                                         Имеются все необходимые документы для осуществления деятельности.
                                     </p>                                    
 
@@ -118,8 +118,8 @@
                                     </a>
                                 </div>
                                 <div class="col-xs-3">
-                                    <a href="/images/certificate_2018_800.jpg" title="Свидетельство" data-gallery="">
-                                        <img style="height: 100%; width: 100%" src="/images/certificate_2018_400.jpg" alt="Свидетельство">
+                                    <a href="/images/certificate_2019_800.jpg" title="Свидетельство" data-gallery="">
+                                        <img style="height: 100%; width: 100%" src="/images/certificate_2019_400.jpg" alt="Свидетельство">
                                     </a>
                                 </div>
                             </div>
@@ -154,9 +154,9 @@
                                     </a>
                                     <h3><a href="/request?target=Технический%20план" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">Технический план</a></h3>
                                     <p>Для постановки на кадастровый учет здание, жилой дом, квартиру, гараж, сооружение нужен технический план. Его может изготавливать только кадастровый инженер. Технический план нужен для внесения изменений или исправления ошибки, а также для перепланировки.
-                                        <br>Квартира - <span class="badge">от 2500 руб.</span>
-                                        <br>Гараж - <span class="badge">от 2000 руб.</span>
-                                        <br>Индтвидуальный жилой дом - <span class="badge">от 5000 руб.</span>
+                                        <br>Квартира - <span class="badge">от 4000 руб.</span>
+                                        <br>Гараж - <span class="badge">от 3000 руб.</span>
+                                        <br>Индивидуальный жилой дом - <span class="badge">от 5000 руб.</span>
                                     </p>
                                 </div>
                             </div>
@@ -171,7 +171,7 @@
                                     <h3><a href="/request?target=Межевой%20план" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">Межевой план</a></h3>
                                     <p>Уточнить границы, разделить участок, объединить участки, образовать новый участок не получится без межевого плана.
                                         <br>Межевой план - <span class="badge">от 7000 руб.</span>
-                                        <br>Схема расположения участка на кадастровом плане территории - <span class="badge">от 4000 руб.</span>
+                                        <br>Схема расположения участка на кадастровом плане территории - <span class="badge">от 5000 руб.</span>
                                         <br>При межевании более двух земельных участков - хорошие скидки.
                                     </p>
                                 </div>
@@ -187,7 +187,7 @@
                                     <h3><a href="/request?target=Акт%20обследования" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">Акт обследования</a></h3>
                                     <p>
                                         Снять с кадастрового учета объект недвижимости поможет акт обследования, составленный кадастровым инженером.
-                                        <br>Акт обследования - <span class="badge">от 2000 руб.</span>
+                                        <br>Акт обследования - <span class="badge">от 5000 руб.</span>
                                     </p>
                                 </div>
                             </div>
@@ -200,10 +200,10 @@
                                         </span>
                                     </a>
                                     <h3><a href="/request?target=План%20объкта" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">План объкта</a></h3>
-                                    <p>План объекта (или техпаспорт) - это более полное отображение информации об объектке недвижимости, чем в кадастровом паспорте, требуется для банков, суда, администрации.
-                                        <br>Квартира - <span class="badge">2000 руб.</span>
-                                        <br>Гараж - <span class="badge">2000 руб.</span>
-                                        <br>Жилой дом - <span class="badge">от 4000 руб.</span>
+                                    <p>План объекта (или техпаспорт) - это более полное отображение информации об объекте недвижимости, чем в кадастровом паспорте, требуется для банков, суда, администрации.
+                                        <br>Квартира - <span class="badge">4000 руб.</span>
+                                        <br>Гараж - <span class="badge">3000 руб.</span>
+                                        <br>Жилой дом - <span class="badge">от 5000 руб.</span>
                                     </p>
                                 </div>
                             </div>
@@ -349,7 +349,7 @@
                                     <div class="form-group">
                                         <i class="fa fa-2x fa-map-marker"></i>
                                         <span class="text">
-                                            <a href="#location" id="adress">Красный проспект, д. 220, корп. 1, оф. 434 Б</a>
+                                            <a href="#location" id="adress">Красный проспект, д. 220, корп. 1, оф. 300 А</a>
                                         </span>
                                     </div>
                                 </div>
@@ -649,14 +649,14 @@
 
             function init() {
                 myMap = new ymaps.Map("location", {
-                    center: [55.067841, 82.911291],
+                    center: [55.068530, 82.911089],
                     zoom: 16,
                     controls: ['zoomControl']
                 });
                 myGeoObject = new ymaps.GeoObject({
                     geometry: {
                         type: "Point",
-                        coordinates: [55.067841, 82.911291                        ]
+                        coordinates: [55.068530, 82.911089]
                     },
                     properties: {
                         iconContent: 'Кадастровая служба',
