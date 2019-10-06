@@ -11,8 +11,6 @@ if (!$builder->testPhrase($_POST['code'])) {
     exit;
 }
 
-exit;
-
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $admin_email = "mail@kadserv.ru";
