@@ -645,7 +645,7 @@
                         success: function (response) {
                             if (response == 1) {
                                 $('#modal_success').text('Ваш запрос успешно отправлен.');
-                                $('#modal_error').('');
+                                $('#modal_error').text('');
                             } else if (response == -1) {
                                 $('#modal_error').text('Не правильный проверочный код.');
                                 $('#modal_send').prop('disabled', false);
