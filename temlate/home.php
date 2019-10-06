@@ -648,6 +648,7 @@
                                 $('#modal_error').text('');
                             } else if (response == -1) {
                                 $('#modal_error').text('Не правильный проверочный код.');
+                                $('#image_code').attr('src', 'http://localhost:8080/image.php?_' + new Date().getTime());
                                 $('#modal_send').prop('disabled', false);
                             } else {
                                 $('#modal_error').text('Запрос не был отправлен. Пожалуйста, попробуйте еще раз!');
