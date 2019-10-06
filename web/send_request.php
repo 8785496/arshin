@@ -1,7 +1,17 @@
 <?php
+use Gregwar\Captcha\CaptchaBuilder;
 
 require __DIR__ . '/../php/db.php';
 require __DIR__ . '/../php/mailer.php';
+
+session_start();
+$builder = new CaptchaBuilder($_SESSION['phrase']);
+if (!$builder->testPhrase($_POST['code'])) {
+    echo -1;
+    exit;
+}
+
+exit;
 
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);

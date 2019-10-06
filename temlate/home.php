@@ -453,6 +453,17 @@
                                 <input id="modal_description" name="description" class="form-control btn-noborder-radius" type="text"
                                        style="color: #313131" maxlength="1024">
                             </div>
+
+                            <div class="form-group">
+                                <div class="code-label">
+                                    <label for="modal_code">
+                                        Проверчный код *
+                                    </label>
+                                    <img id="image_code" src="/image.php" alt="Проверчный код" />
+                                </div>
+                                <input id="modal_code" name="code" class="form-control btn-noborder-radius" type="text"
+                                       style="color: #313131" maxlength="5">
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -595,10 +606,15 @@
         <!-- Send modal request -->
         <script>
             $(document).ready(function() {
+                $('#image_code').click(function(e) {
+                    e.target.src = 'http://localhost:8080/image.php?_' + new Date().getTime();
+                });
+
                 $('#modal_send').click(function() {
                     var name = $('#modal_name').val();
                     var email = $('#modal_email').val();
                     var phone = $('#modal_phone').val();
+                    var code = $('#modal_code').val();
 
                     var isInvalid = false;
                     var message = '';
@@ -609,6 +625,9 @@
                     } else if (!email && !phone) {
                         isInvalid = true;
                         message = 'Заполните телефон или E-mail.';
+                    } else if (!code) {
+                        isInvalid = true;
+                        message = 'Заполните проверочный код.';
                     }
 
                     if (isInvalid) {
@@ -626,6 +645,9 @@
                         success: function (response) {
                             if (response == 1) {
                                 $('#modal_success').text('Ваш запрос успешно отправлен.');
+                            } else if (response == -1) {
+                                $('#modal_error').text('Не правильный проверочный код.');
+                                $('#modal_send').prop('disabled', false);
                             } else {
                                 $('#modal_error').text('Запрос не был отправлен. Пожалуйста, попробуйте еще раз!');
                                 $('#modal_send').prop('disabled', false);

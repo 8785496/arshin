@@ -625,3 +625,11 @@ ul.cb-slideshow h4{
 }
 .nav-pills .active { background-color: #E96840; color:#FFF; }
 .contact-msg { line-height:1.6em; margin-bottom:20px;}
+
+.code-label {
+    margin-bottom: 10px;
+}
+
+.code-label img {
+    cursor: pointer;
+}
