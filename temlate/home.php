@@ -349,7 +349,7 @@
                                     <div class="form-group">
                                         <i class="fa fa-2x fa-map-marker"></i>
                                         <span class="text">
-                                            <a href="#location" id="adress">Красный проспект, д. 220, корп. 1, оф. 300 А</a>
+                                            <a href="#location" id="adress">проспект Карла Маркса, 30/1, офис 428</a>
                                         </span>
                                     </div>
                                 </div>
@@ -649,14 +649,14 @@
 
             function init() {
                 myMap = new ymaps.Map("location", {
-                    center: [55.068530, 82.911089],
+                    center: [54.991470, 82.912610],
                     zoom: 16,
                     controls: ['zoomControl']
                 });
                 myGeoObject = new ymaps.GeoObject({
                     geometry: {
                         type: "Point",
-                        coordinates: [55.068530, 82.911089]
+                        coordinates: [54.991470, 82.912610]
                     },
                     properties: {
                         iconContent: 'Кадастровая служба',
