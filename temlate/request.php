@@ -235,6 +235,17 @@
                                     </div>
                                 </div> -->
                             </div>
+                            <!-- Проверочный код -->
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Проверчный код *</label>
+                                <div class="col-sm-4">
+                                    <img id="image_code" class="captcha" src="/image.php" alt="Проверчный код" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <input id="modal_code" name="code" class="form-control custom-labels" type="text" maxlength="5">
+                                </div>
+                            </div>
+
                             <div class="form-group">
                                 <div class="col-sm-4"></div>
                                 <div class="col-sm-offset-4 col-sm-4 height-contact-element">
@@ -325,6 +336,10 @@
         <!-- Send Request -->
         <script type="text/javascript">
             $(document).ready(function () {
+                $('#image_code').click(function(e) {
+                    e.target.src = '/image.php?_' + new Date().getTime();
+                });
+                
                 $('#requestForm').submit(function (e) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -332,6 +347,7 @@
                     var name = $("#name").val();
                     var phone = $("#phone").val();
                     var email = $("#email").val();
+                    var code = $('#modal_code').val();
                     var goodToGo = false;
                     var messgaeError = 'Заявка не может быть отправлена.';
 
@@ -340,6 +356,8 @@
                     } else if ((phone && phone.length === 0 || $.trim(phone) === '') &&
                             (phone && email.length === 0 || $.trim(email) === '')) {
                         messgaeError = 'Чтобы продолжить, заполните поле Email или Телефон!';
+                    } else if (!code) {
+                        messgaeError = 'Чтобы продолжить, заполните проверочный код.';
                     } else {
                         goodToGo = true;
                     }
@@ -356,6 +374,10 @@
                             success: function (response) {
                                 if (response == 1) {
                                     $('#success').html('<div class="col-md-12 text-center">Ваш запрос успешно отправлен.</div>');
+                                } else if (response == -1) {
+                                    $('#success').html('<div class="col-md-12 text-center">Не правильный проверочный код.</div>');
+                                    $('#image_code').attr('src', '/image.php?_' + new Date().getTime());
+                                    $('#send').prop("disabled", false);
                                 } else {
                                     $('#success').html('<div class="col-md-12 text-center">Запрос не был отправлен. Пожалуйста, попробуйте еще раз!</div>');
                                     $('#send').prop("disabled", false);

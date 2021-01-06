@@ -88,7 +88,7 @@ try {
             "Площадь (длина): $size\n" .
             "Описание: $description"
         ;
-        $message = Swift_Message::newInstance('Request from site аршин-нск.рф')
+        $message = Swift_Message::newInstance('Request from site kadserv.ru')
             ->setBody($body)
             ->setFrom($smtp['username'])
             ->setTo(['georg.88@mail.ru', $admin_email]);

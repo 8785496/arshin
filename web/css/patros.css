@@ -409,7 +409,7 @@ ul.nav-pills  { text-align: center; margin: 25px auto 20px auto; width: auto; di
 .nav>li>a:focus, .nav>li>a:hover { color:#FFF; background-color: #E96840; }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { background-color: #E96840; color:#FFF; }
 .nav-pills>li+li { margin:0px; }
-.modal-dialog { height: 100%; width: 100%; display: flex; align-items: center; }
+.modal-dialog { height: 100%; width: 100%; display: flex; align-items: center; margin: 0 }
 .modal-content { margin: 0 auto;  max-width: 80%;  max-height: 80%; }
 .nav li a { text-transform: uppercase; }
 #about h2, #services h2, #bloghome h2, #meet-team h2, #portfolio1 h2, #contact h2, #home h3 { text-transform: uppercase; }
@@ -630,6 +630,12 @@ ul.cb-slideshow h4{
     margin-bottom: 10px;
 }
 
-.code-label img {
+.captcha {
     cursor: pointer;
+}
+.wharsapp-icon {
+    position: relative;
+    bottom: -8px;
+    margin-left: 10px;
+    color: white;
 }

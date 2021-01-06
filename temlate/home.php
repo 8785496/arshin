@@ -71,7 +71,10 @@
                                 </div>
                             </div>
                         </div>
-                        <h4>Все объекты недвижимости</h4>
+                        <h4>
+                            Все объекты недвижимости
+                            <a target="_blank" class="wharsapp-icon" href="https://wa.me/79639464671"><i class="fa fa-2x fa-whatsapp"></i></a>
+                        </h4>
                     </div>
                 </li>
             </ul>
@@ -362,7 +365,7 @@
                                 <div class="col-md-12 height-contact-element">
                                     <div class="form-group">
                                         <i class="fa fa-2x fa-whatsapp"></i>
-                                        <span class="text">+7 (963) 946–46–71</span>
+                                        <span class="text"><a target="_blank" href="https://wa.me/79639464671">+7 (963) 946–46–71</a></span>
                                     </div>
                                 </div>
                                 <div class="col-md-12 height-contact-element">    
@@ -421,7 +424,7 @@
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
              style="background-color: rgba(0, 0, 0, 0.5)">
             <div class="modal-dialog" role="document">
-                <div class="modal-content" style="border-radius: 0; min-width: 400px; overflow-y: auto;">
+                <div class="modal-content" style="border-radius: 0; max-width: 400px; overflow-y: auto;">
                     <div class="modal-body">
                         <form id="modal_form">
                             <div id="modal_success" class="text-success" style="margin-bottom: 10px"></div>
@@ -459,7 +462,7 @@
                                     <label for="modal_code">
                                         Проверчный код *
                                     </label>
-                                    <img id="image_code" src="/image.php" alt="Проверчный код" />
+                                    <img id="image_code" class="captcha" src="/image.php" alt="Проверчный код" />
                                 </div>
                                 <input id="modal_code" name="code" class="form-control btn-noborder-radius" type="text"
                                        style="color: #313131" maxlength="5">
@@ -607,7 +610,7 @@
         <script>
             $(document).ready(function() {
                 $('#image_code').click(function(e) {
-                    e.target.src = 'http://localhost:8080/image.php?_' + new Date().getTime();
+                    e.target.src = '/image.php?_' + new Date().getTime();
                 });
 
                 $('#modal_send').click(function() {
@@ -648,7 +651,7 @@
                                 $('#modal_error').text('');
                             } else if (response == -1) {
                                 $('#modal_error').text('Не правильный проверочный код.');
-                                $('#image_code').attr('src', 'http://localhost:8080/image.php?_' + new Date().getTime());
+                                $('#image_code').attr('src', '/image.php?_' + new Date().getTime());
                                 $('#modal_send').prop('disabled', false);
                             } else {
                                 $('#modal_error').text('Запрос не был отправлен. Пожалуйста, попробуйте еще раз!');
