@@ -638,6 +638,7 @@ ul.cb-slideshow h4{
     bottom: -8px;
     margin-left: 10px;
     color: white;
+    z-index: 1001;
 }
 .whatsapp-icon:hover {
     color: #E96840;
