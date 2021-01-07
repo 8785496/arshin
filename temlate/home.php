@@ -15,7 +15,7 @@
         <!-- Galery -->
         <link rel="stylesheet" href="/css/blueimp-gallery.min.css" >
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/patros.css?_=20210107" >
+        <link rel="stylesheet" href="/css/patros.css?_=202101071" >
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
        <!--[if lt IE 9]>
