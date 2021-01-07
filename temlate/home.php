@@ -15,7 +15,7 @@
         <!-- Galery -->
         <link rel="stylesheet" href="/css/blueimp-gallery.min.css" >
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/patros.css" >
+        <link rel="stylesheet" href="/css/patros.css?_=20210107" >
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
        <!--[if lt IE 9]>
@@ -73,7 +73,7 @@
                         </div>
                         <h4>
                             Все объекты недвижимости
-                            <a target="_blank" class="wharsapp-icon" href="https://wa.me/79639464671"><i class="fa fa-2x fa-whatsapp"></i></a>
+                            <a target="_blank" class="whatsapp-icon" href="https://wa.me/79639464671"><i class="fa fa-2x fa-whatsapp"></i></a>
                         </h4>
                     </div>
                 </li>
@@ -330,6 +330,17 @@
                                             <input type="text" name="message" class="form-control custom-labels" id="message" placeholder="ТЕКСТ СООБЩЕНИЯ" required data-validation-required-message="Пожалуйста, напишите сообщение!"/>
                                         </div>
                                     </div>
+                                    <div class="col-sm-6 height-contact-element">
+                                        <div>
+                                            <img id="message_image" name="code" class="captcha" src="/image.php?type=message" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 height-contact-element">
+                                        <div class="form-group">
+                                            <input type="text" autocomplete="off" name="code" class="form-control custom-labels" id="message_code" placeholder="ПРОВЕРОЧНЫЙ КОД" required data-validation-required-message="Пожалуйста, заполните код!"/>
+                                        </div>
+                                    </div>
                                     <div class="col-sm-3 col-xs-6 height-contact-element">
                                         <div class="form-group">
                                             <input type="submit" class="btn btn-md btn-custom btn-noborder-radius" value="Отправить"/>
@@ -465,7 +476,7 @@
                                     <img id="image_code" class="captcha" src="/image.php" alt="Проверчный код" />
                                 </div>
                                 <input id="modal_code" name="code" class="form-control btn-noborder-radius" type="text"
-                                       style="color: #313131" maxlength="5">
+                                       style="color: #313131" maxlength="5" autocomplete="off">
                             </div>
                         </form>
                     </div>
@@ -550,6 +561,10 @@
         <!--Send Email-->
         <script type="text/javascript">
             $(document).ready(function () {
+                $("#message_image").click(function(e) {
+                    e.target.src = '/image.php?type=message&_' + new Date().getTime();
+                });
+                
                 $('#contactForm').on('submit', function (e) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -558,6 +573,7 @@
                     var name = $("#name").val();
                     var email = $("#email").val();
                     var message = $("#message").val();
+                    var code = $("#message_code").val();
                     var goodToGo = false;
                     var messgaeError = 'Request can not be send';
                     var pattern = new RegExp(/^(('[\w-\s]+')|([\w-]+(?:\.[\w-]+)*)|('[\w-\s]+')([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
@@ -583,7 +599,15 @@
                             success: function (response) {
                                 if (response == 1) {
                                     $('#success').html('<div class="col-md-12 text-center">Ваш e-mail успешно отправлен</div>');
-                                    window.location.reload();
+                                    $("#name").val('');
+                                    $("#email").val('');
+                                    $("#message").val('');
+                                    $("#message_code").val('');
+                                    $('#message_image').attr('src', '/image.php?type=message&_' + new Date().getTime());
+                                } else if (response == -1) {
+                                    $('#success').html('<div class="col-md-12 text-center">Не правильный проверочный код</div>');
+                                    $('#message_image').attr('src', '/image.php?type=message&_' + new Date().getTime());
+                                    $("#message_code").val('');
                                 } else {
                                     $('#success').html('<div class="col-md-12 text-center">E-mail не был отправлен. Пожалуйста, попробуйте еще раз!</div>');
                                 }
@@ -653,6 +677,7 @@
                                 $('#modal_error').text('Не правильный проверочный код.');
                                 $('#image_code').attr('src', '/image.php?_' + new Date().getTime());
                                 $('#modal_send').prop('disabled', false);
+                                $('#modal_code').val('');
                             } else {
                                 $('#modal_error').text('Запрос не был отправлен. Пожалуйста, попробуйте еще раз!');
                                 $('#modal_send').prop('disabled', false);

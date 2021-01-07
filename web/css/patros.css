@@ -633,9 +633,12 @@ ul.cb-slideshow h4{
 .captcha {
     cursor: pointer;
 }
-.wharsapp-icon {
+.whatsapp-icon {
     position: relative;
     bottom: -8px;
     margin-left: 10px;
     color: white;
+}
+.whatsapp-icon:hover {
+    color: #E96840;
 }

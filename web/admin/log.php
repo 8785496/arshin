@@ -2,7 +2,7 @@
 <div class="container">
 <?php
 echo '<pre>';
-require __DIR__ . '/../log/error.log';
+require __DIR__ . '/../../log/error.log';
 echo '</pre>';
 ?>
 </div>

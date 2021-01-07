@@ -13,7 +13,7 @@
         <!-- Custom Fonts -->
         <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/patros.css" >
+        <link rel="stylesheet" href="/css/patros.css?_=20210107" >
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -242,7 +242,7 @@
                                     <img id="image_code" class="captcha" src="/image.php" alt="Проверчный код" />
                                 </div>
                                 <div class="col-sm-4">
-                                    <input id="modal_code" name="code" class="form-control custom-labels" type="text" maxlength="5">
+                                    <input id="modal_code" name="code" autocomplete="off" class="form-control custom-labels" type="text" maxlength="5">
                                 </div>
                             </div>
 
