@@ -80,7 +80,7 @@
             </ul>
             <div class="intro-scroller">
                 <button class="btn btn-lg btn-custom btn-noborder-radius" data-toggle="modal" data-target="#myModal"
-                        style="width: auto; color: white">
+                        style="width: auto; color: white" id="discount">
                     Получить скидку 10%
                 </button>
             </div>
@@ -633,6 +633,14 @@
         <!-- Send modal request -->
         <script>
             $(document).ready(function() {
+                $('.whatsapp-icon').click(function() {
+                    $.get('/whatsapp').then(function() {});
+                });
+
+                $('#discount').click(function() {
+                    $.get('/discount').then(function() {});
+                });
+                
                 $('#image_code').click(function(e) {
                     e.target.src = '/image.php?_' + new Date().getTime();
                 });
