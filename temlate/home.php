@@ -321,7 +321,7 @@
                                     </div>
                                     <div class="col-sm-6 height-contact-element">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control custom-labels" id="email" placeholder="EMAIL или ТЕЛЕФОН" required data-validation-required-message="Пожалуйста, напишите Ваш email!"/>
+                                            <input type="email" name="email" class="form-control custom-labels" id="email" placeholder="EMAIL" required data-validation-required-message="Пожалуйста, напишите Ваш email!"/>
                                             <p class="help-block text-danger"></p>
                                         </div>
                                     </div>
