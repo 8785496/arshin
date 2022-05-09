@@ -2,6 +2,7 @@
 /php/users.php
 /php/db.php
 /php/smtp.php
+/php/telegram_settings.php
 /log/error.log
 /vendor/
 /nbproject/

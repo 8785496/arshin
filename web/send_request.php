@@ -1,8 +1,10 @@
 <?php
+require __DIR__ . '/../vendor/autoload.php';
+
 use Gregwar\Captcha\CaptchaBuilder;
 
 require __DIR__ . '/../php/db.php';
-require __DIR__ . '/../php/mailer.php';
+require __DIR__ . '/../php/telegram.php';
 
 session_start();
 $builder = new CaptchaBuilder($_SESSION['phrase']);
@@ -14,7 +16,7 @@ if (!$builder->testPhrase($_POST['code'])) {
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $admin_email = "mail@kadserv.ru";
-    
+
     if (isset($_POST['name'])) {
         $name = trim($_POST['name']);
         if (strlen($name) <= 0) {
@@ -31,9 +33,9 @@ try {
     $size = (isset($_POST['size'])) ? trim($_POST['size']) : null;
     $description = (isset($_POST['description'])) ? trim($_POST['description']) : null;
     $folder = '20160429_152536';
-    
+
     $sql = "INSERT INTO request (email, type_object, type_work, name, phone, target, adress, size, description, folder, files, time) "
-            . "VALUES(:email, :typeObject, :typeWork, :name, :phone, :target, :adress, :size, :description, :folder, :files, :time);";
+        . "VALUES(:email, :typeObject, :typeWork, :name, :phone, :target, :adress, :size, :description, :folder, :files, :time);";
     $query = $db->prepare($sql);
     if ($email) {
         $query->bindParam(':email', $email, PDO::PARAM_STR, 64);
@@ -75,7 +77,7 @@ try {
     $query->bindParam(':folder', $folder, PDO::PARAM_STR, 32);
     $query->bindValue(':files', null, PDO::PARAM_NULL);
     $query->bindValue(':time', (new DateTime())->format('Y-m-d H:i:s'));
-    
+
     if ($query->execute()) {
         $body =
             "Имя: $name\n" .
@@ -86,13 +88,8 @@ try {
             "Цель работ: $target\n" .
             "Адрес: $adress\n" .
             "Площадь (длина): $size\n" .
-            "Описание: $description"
-        ;
-        $message = Swift_Message::newInstance('Request from site kadserv.ru')
-            ->setBody($body)
-            ->setFrom($smtp['username'])
-            ->setTo(['georg.88@mail.ru', $admin_email]);
-        $mailer->send($message);
+            "Описание: $description";
+        send_message($body);
         echo 1;
     } else {
         echo 0;

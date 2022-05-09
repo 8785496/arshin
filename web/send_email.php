@@ -1,9 +1,10 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
+
 use Gregwar\Captcha\CaptchaBuilder;
 
 require __DIR__ . '/../php/db.php';
-// require __DIR__ . '/../php/mailer.php';
+require __DIR__ . '/../php/telegram.php';
 
 session_start();
 $builder = new CaptchaBuilder($_SESSION['message_phrase']);
@@ -21,7 +22,7 @@ if (isset($_REQUEST['email'])) {
     try {
         $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
         $sql = "INSERT INTO email (email, name, subject, body, time) "
-                . "VALUES(:email, :name, :subject, :body, :time);";
+            . "VALUES(:email, :name, :subject, :body, :time);";
         $query = $db->prepare($sql);
         $query->bindParam(':email', $email, PDO::PARAM_STR, 128);
         $query->bindParam(':name', $name, PDO::PARAM_STR, 128);
@@ -29,17 +30,10 @@ if (isset($_REQUEST['email'])) {
         $query->bindParam(':body', $message, PDO::PARAM_STR);
         $query->bindValue(':time', (new DateTime())->format('Y-m-d H:i:s'));
         if ($query->execute()) {
-            // $body = "Сообщение: $message\n" .
-            //     "Name: $name\n" .
-            //     "E-mail: $email\n\n".
-            //     "Это сообщение отправлено с сайта\n".
-            //     "Черз фому на сайте\n".
-            //     "Защиты от спама у этой формы пока нет";
-            // $message = Swift_Message::newInstance($subject)
-            //     ->setBody($body)
-            //     ->setFrom($smtp['username'])
-            //     ->setTo(['georg.88@mail.ru', $admin_email]);
-            // $mailer->send($message);
+            $body = "Сообщение: $message\n" .
+                "Name: $name\n" .
+                "E-mail: $email";
+            send_message($body);
             echo 1;
         } else {
             echo 0;
