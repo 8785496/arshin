@@ -149,48 +149,49 @@
                         <div class="col-md-12 homeservices1">
                             <div class="col-md-3 portfolio-item">
                                 <div class="text-center">
-                                    <a href="/request?target=Технический%20план" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">
+                                    <a href="/request" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">
                                         <span class="fa-stack fa-lg">
                                             <i class="fa fa-circle fa-stack-2x"></i>
                                             <i class="fa fa-building fa-stack-1x"></i>
                                         </span>
                                     </a>
-                                    <h3><a href="/request?target=Технический%20план" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">Технический план</a></h3>
-                                    <p>Для постановки на кадастровый учет здание, жилой дом, квартиру, гараж, сооружение нужен технический план. Его может изготавливать только кадастровый инженер. Технический план нужен для внесения изменений или исправления ошибки, а также для перепланировки.
-                                        <br>Квартира - <span class="badge">от 4000 руб.</span>
-                                        <br>Гараж - <span class="badge">от 3000 руб.</span>
-                                        <br>Индивидуальный жилой дом - <span class="badge">от 5000 руб.</span>
+                                    <h3><a href="/request" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">Кадастровые работы</a></h3>
+                                    <p>
+                                        - Технический план.<br>
+                                        На здание, жилой и садовый дом, квартиру, гараж, сооружение<br>
+                                        - Межевой план.<br>
+                                        Для уточнения границ, раздела и объединения земельных участков, образования новых участков.<br>
+                                        - Акт обследования.<br>
+                                        Требуется для снятия с кадастрового учета объекта недвижимости.<br>
+                                        - Схема расположения земельного участка на кадастровом плане территории.
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-3 portfolio-item">
                                 <div class="text-center">
-                                    <a href="/request?target=Межевой%20план" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">
+                                    <a href="/request" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">
                                         <span class="fa-stack fa-lg">
                                             <i class="fa fa-circle fa-stack-2x"></i>
                                             <i class="fa fa-compass fa-stack-1x"></i>
                                         </span>
                                     </a>
-                                    <h3><a href="/request?target=Межевой%20план" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">Межевой план</a></h3>
-                                    <p>Уточнить границы, разделить участок, объединить участки, образовать новый участок не получится без межевого плана.
-                                        <br>Межевой план - <span class="badge">от 7000 руб.</span>
-                                        <br>Схема расположения участка на кадастровом плане территории - <span class="badge">от 5000 руб.</span>
-                                        <br>При межевании более двух земельных участков - хорошие скидки.
+                                    <h3><a href="/request" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">Топографическая съемка</a></h3>
+                                    <p>
+                                        Для проектирования, строительства, ландшафтного дизайна, подключения к сетям водоснабжения и газоснабжения зачастую требуется топографический план. Выполним весь комплекс работ, включая сдачу материалов в городской или областной «Геофонд», и получение топографического плана масштаба 1:500.
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-3 portfolio-item">
                                 <div class="text-center">
-                                    <a href="/request?target=Акт%20обследования" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">
+                                    <a href="/request" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">
                                         <span class="fa-stack fa-lg">
                                             <i class="fa fa-circle fa-stack-2x"></i>
                                             <i class="fa fa-file-text fa-stack-1x"></i>
                                         </span>
                                     </a>
-                                    <h3><a href="/request?target=Акт%20обследования" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">Акт обследования</a></h3>
+                                    <h3><a href="/request" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">Вынос границ участков в натуру</a></h3>
                                     <p>
-                                        Снять с кадастрового учета объект недвижимости поможет акт обследования, составленный кадастровым инженером.
-                                        <br>Акт обследования - <span class="badge">от 5000 руб.</span>
+                                        В случае, если сведения о местоположении границ Вашего земельного участка внесены в Единый государственный реестр недвижимости, такие границы можно по координатам восстановить (указать, вынести) на местности с помощью геодезического оборудования. В результате работ устанавливаются межевые знаки, выдается акт.
                                     </p>
                                 </div>
                             </div>
@@ -202,11 +203,9 @@
                                             <i class="fa fa-institution fa-stack-1x"></i>
                                         </span>
                                     </a>
-                                    <h3><a href="/request?target=План%20объкта" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">План объкта</a></h3>
-                                    <p>План объекта (или техпаспорт) - это более полное отображение информации об объекте недвижимости, чем в кадастровом паспорте, требуется для банков, суда, администрации.
-                                        <br>Квартира - <span class="badge">4000 руб.</span>
-                                        <br>Гараж - <span class="badge">3000 руб.</span>
-                                        <br>Жилой дом - <span class="badge">от 5000 руб.</span>
+                                    <h3><a href="/request?target=План%20объкта" data-toggle="tooltip" data-placement="right" title="Узнать стоимость работ">План объкта (или техпаспорт)</a></h3>
+                                    <p>
+                                        План объекта (или техпаспорт) - это более полное отображение информации об объекте недвижимости, чем в Едином государственном реестре недвижимости. Требуется для банков, суда, передачи помещений в аренду, управляющих компаний. Документ представляет собой планы помещений и экспликации с подсчетом всех площадей.
                                     </p>
                                 </div>
                             </div>
