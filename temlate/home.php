@@ -121,8 +121,8 @@
                                     </a>
                                 </div>
                                 <div class="col-xs-3">
-                                    <a href="/images/certificate_2019_800.jpg" title="Свидетельство" data-gallery="">
-                                        <img style="height: 100%; width: 100%" src="/images/certificate_2019_400.jpg" alt="Свидетельство">
+                                    <a href="/images/certificate_2021_800.jpg" title="Свидетельство" data-gallery="">
+                                        <img style="height: 100%; width: 100%" src="/images/certificate_2021_400.jpg" alt="Свидетельство">
                                     </a>
                                 </div>
                             </div>
