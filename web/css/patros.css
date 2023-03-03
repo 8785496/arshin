@@ -173,6 +173,7 @@ footer { background-color: #1E1E1E; width:100%; display:block; color:#f7f7f7; }
 .custom-menu li{font-size: 12px;padding:0px 0px;}
 .btn-custom, .btn-custom:active,.btn-custom:focus, .btn-custom:hover{background-color:#E96840;border-color:#E96840}
 #about {padding: 80px 0px 40px 0px;/*background-image:url("../images/background.jpg");background-repeat:repeat;*/}
+#prices {padding: 80px 0px 40px 0px;}
 #products {padding-top:80px;}
 #contact {padding-top:80px;}
 #location {padding-top:50px;width:100%;height:450px;}

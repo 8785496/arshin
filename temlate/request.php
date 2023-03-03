@@ -13,7 +13,7 @@
         <!-- Custom Fonts -->
         <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/patros.css?_=202101071" >
+        <link rel="stylesheet" href="/css/patros.css?_=20230303">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -45,9 +45,9 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right custom-menu">
                         <li><a href="/#home">Главная</a></li>
-                        <li><a href="/#about">Преимущества</a></li>
+                        <li><a href="/#prices">Стоимость работ</a></li>
                         <li><a href="/#services">Услуги</a></li>
-                        <li><a href="/#portfolio1">Примеры работ</a></li>
+                        <li><a href="/#about">Преимущества</a></li>
                         <li><a href="/#contact">Контакты</a></li>
                     </ul>
                 </div>
@@ -65,7 +65,7 @@
                             <h5>При оформлении заявки через сайт <strong>скидка 10%</strong></h5>
                             <h4>
                                 Стоимость стандартных видов работ в разделе
-                                <a href="/#services" class="link"><strong>Услуги</strong></a>
+                                <a href="/#prices" class="link"><strong>Стоимость работ</strong></a>
                             </h4>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                             </div>
                             <!--Фамилия Имя Отчество-->
                             <div class="form-group">
-                                <label for="name" class="col-sm-4 control-label">Фамилия Имя Отчество *</label>
+                                <label for="name" class="col-sm-4 control-label">Имя *</label>
                                 <div class="col-sm-8">
                                     <input type="text" class="form-control custom-labels" id="name" name="name" maxlength="64">
                                 </div>
