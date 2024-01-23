@@ -42,7 +42,7 @@
                     <a class="navbar-brand" href="/">
                         <!--<img src="images/logo.png" alt="company logo" />-->
                         <span style="color: white">
-                            Кадастровый инженер<br>
+                            пр-т К. Маркса, 30/1, оф. 428<br>
                             г. Новосибирск, тел. 213-63-40
                         </span>
                     </a>
@@ -50,8 +50,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right custom-menu">
                         <li class="active"><a href="#home">Главная</a></li>
-                        <li><a href="#prices">Стоимость работ</a></li>
-                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#engineering_surveys">Инженерные изыскания</a></li>
+                        <li><a href="#services">Кадастровые работы</a></li>
                         <li><a href="#about">Преимущества</a></li>
                         <li><a href="#contact">Контакты</a></li>
                     </ul>
@@ -72,8 +72,8 @@
                             </div>
                         </div>
                         <h4>
-                            Все объекты недвижимости
-                            <a target="_blank" class="whatsapp-icon" href="https://wa.me/79639464671"><i class="fa fa-2x fa-whatsapp"></i></a>
+                            Кадастровые и геодезические работы<br />
+                            Топография, инженерные изыскания
                         </h4>
                     </div>
                 </li>
@@ -83,127 +83,53 @@
                         style="width: auto; color: white" id="discount">
                     Оставить заявку
                 </button>
+                <a target="_blank" class="whatsapp-icon" href="https://wa.me/79639464671"><i class="fa fa-2x fa-whatsapp"></i></a>
             </div>
         </header>
 
-        <!-- Стоимость работ -->
-        <section id="prices">
+        <!-- Инженерные изыскания -->
+        <section id="engineering_surveys">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="text-center">
-                            <h2>Стоимость работ</h2>
+                        <div class="text-center" style="margin-top: 60px;">
                             <img class="img-responsive displayed" src="/images/short.png" alt="Prices"/>
                             <br>
                         </div>
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>№</th>
-                                    <th colspan="2">Вид работ</th>
-                                    <th>Цена за ед., руб.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td colspan="4" class="text-center"><strong>Индивидуальный жилой дом</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Подготовка технического плана на индивидуальный жилой дом</td>
-                                    <td>1 этаж</td>
-                                    <td>8000</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Подготовка технического плана на индивидуальный жилой дом</td>
-                                    <td>2 этажа</td>
-                                    <td>9000</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Подготовка технического плана на индивидуальный жилой дом</td>
-                                    <td>3 этажа</td>
-                                    <td>10000</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Подготовка технического плана на хозяйственную постройку (баню, гараж) </td>
-                                    <td>1 этаж</td>
-                                    <td>5000</td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="4" class="text-center"><strong>Садовый дом</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Подготовка технического плана на садовый дом</td>
-                                    <td>1 этаж</td>
-                                    <td>7000</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Подготовка технического плана на садовый дом</td>
-                                    <td>2 этажа</td>
-                                    <td>8000</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>Подготовка технического плана на садовый дом</td>
-                                    <td>3 этажа</td>
-                                    <td>9000</td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="4" class="text-center"><strong>Межевание/вынос границ в натуру</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td colspan="2">Подготовка межевого плана на земельный участок личного пользования</td>
-                                    <td>8000</td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td colspan="2">Подготовка схемы расположения земельного участка на кадастровом плане территории</td>
-                                    <td>5000</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td colspan="2">Вынос границ земельного участка в натуру (разбивка)</td>
-                                    <td>800р за точку + 500р выезд специалиста</td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="4" class="text-center"><strong>Квартира/гараж</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>11</td>
-                                    <td colspan="2">Подготовка технического плана на квартиру</td>
-                                    <td>3500</td>
-                                </tr>
-                                <tr>
-                                    <td>12</td>
-                                    <td colspan="2">Подготовка схемы расположения, межевого плана и технического плана на гаражный бокс по "гаражной амнистии"</td>
-                                    <td>8000</td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="4" class="text-center"><strong>Топографическая съемка</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>13</td>
-                                    <td colspan="2">Исполнительная / топографическая съемка (со сдачей в Геофонд)</td>
-                                    <td>от 10000 р. (в зависимости от количества необходимых планшетов)</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="text">
+                            Мы с радостью готовы предложить Вам, квалифицированные услуги наших специалистов в сфере геодезического сопровождения строительных объектов, а также Инженерных изысканий для проектирования зданий, сооружений, технических устройств, линейных объектов и т.д.
+                        </div>
+                        <div class="text-center">
+                            <h2>Виды работ:</h2>
+                        </div>
+                        <ul style="list-style: square;">
+                            <li>Вынос и закрепление строительных осей, создание планово-высотного обоснования;</li>
+                            <li>Подсчет объемов земляных масс;</li>
+                            <li>Исполнительные съемки на все виды строительных работ;</li>
+                            <liПодтверждение объемов выполненных работ у заказчика;li>
+                            <li>Разбивочные работы в процессе строительства;</li>
+                            <li>Инженерно-геодезические изыскания для прохождения Государственной экспертизы;</li>
+                            <li>Работы по выполнению топографической съёмки в любом масштабе;</li>
+                            <li>Съёмки для ландшафтного дизайна;</li>
+                            <li>Высокоточное нивелирование 1-4 класса точности;</li>
+                            <li>Наблюдение за осадками, кренами зданий и сооружений;</li>
+                        </ul>
+                        <div class="text-center">
+                            <h2>Наши преимущества:</h2>
+                        </div>
+                        <ul style="list-style: square;">
+                            <li>Современное геодезическое оборудование и программы для обработки полученных информационных данных;</li>
+                            <li>Системный подход к решению задач в процессе строительства от начального этапа до заключительной стадии сдачи объекта;</li>
+                            <li>Дипломированные специалисты, награжденные почетными медалями и грамотами от губернатора Кемеровской области;</li>
+                            <li>Есть допуски СРО на инженерно-геодезические и кадастровые работы;</li>
+                            <li>К каждому объекту подходим с полной ответственностью, работаем надежно, качественно и по приемлемым ценам;</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Услуги -->
+        <!-- Кадастровые работы -->
         <section id="services">
             <div class="orangeback">
                 <div class="container">
@@ -212,7 +138,7 @@
                         <div class="col-md-12 text-center">
                             <a class="btn btn-lg btn-custom btn-noborder-radius" href="/request"
                                style="width: auto; color: white; border: 1px solid white">
-                                Рассчитать стоимость работ
+                                Рассчитать стоимость кадастровых работ
                             </a>
                         </div>
                     </div>
@@ -405,7 +331,10 @@
                                 <div class="col-md-12 height-contact-element">
                                     <div class="form-group">
                                         <i class="fa fa-2x fa-phone"></i>
-                                        <span class="text">(383) 213-63-40,&nbsp;&nbsp;&nbsp;&nbsp;+7 (963) 946–46–71</span>
+                                        <span class="text">
+                                            <a href="tel:+73832136340">(383) 213-63-40</a>,
+                                            <a href="tel:+79639464671">+7 (963) 946–46–71</a>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="col-md-12 height-contact-element">

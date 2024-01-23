@@ -37,7 +37,7 @@
                     <a class="navbar-brand" href="/">
                         <!--<img src="images/logo.png" alt="company logo" />-->
                         <span style="color: white">
-                            Кадастровый инженер<br>
+                            пр-т К. Маркса, 30/1, оф. 428<br>
                             г. Новосибирск, тел. 213-63-40
                         </span>
                     </a>
@@ -45,8 +45,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right custom-menu">
                         <li><a href="/#home">Главная</a></li>
-                        <li><a href="/#prices">Стоимость работ</a></li>
-                        <li><a href="/#services">Услуги</a></li>
+                        <li><a href="/#engineering_surveys">Инженерные изыскания</a></li>
+                        <li><a href="/#services">Кадастровые работы</a></li>
                         <li><a href="/#about">Преимущества</a></li>
                         <li><a href="/#contact">Контакты</a></li>
                     </ul>
@@ -61,12 +61,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="text-center color-elements">
-                            <h2>Узнать стоимость работ</h2>
+                            <h2>Узнать стоимость кадастровых работ</h2>
                             <h5>При оформлении заявки через сайт <strong>скидка 10%</strong></h5>
-                            <h4>
-                                Стоимость стандартных видов работ в разделе
-                                <a href="/#prices" class="link"><strong>Стоимость работ</strong></a>
-                            </h4>
                         </div>
                     </div>
                 </div>
