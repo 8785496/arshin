@@ -52,7 +52,7 @@
                         <li class="active"><a href="#home">Главная</a></li>
                         <li><a href="#engineering_surveys">Инженерные изыскания</a></li>
                         <li><a href="#services">Кадастровые работы</a></li>
-                        <li><a href="#about">Преимущества</a></li>
+                        <li><a href="#prices">Стоимость</a></li>
                         <li><a href="#contact">Контакты</a></li>
                     </ul>
                 </div>
@@ -92,15 +92,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="text-center" style="margin-top: 60px;">
-                            <img class="img-responsive displayed" src="/images/short.png" alt="Prices"/>
-                            <br>
+                        <div class="text-center">
+                            <h2>Инженерные изыскания</h2>
+                            <img class="img-responsive displayed" src="/images/short.png" alt="engineering surveys"/>
                         </div>
                         <div class="text">
                             Мы с радостью готовы предложить Вам, квалифицированные услуги наших специалистов в сфере геодезического сопровождения строительных объектов, а также Инженерных изысканий для проектирования зданий, сооружений, технических устройств, линейных объектов и т.д.
                         </div>
                         <div class="text-center">
-                            <h2>Виды работ:</h2>
+                            <h3>Виды работ:</h3>
                         </div>
                         <ul style="list-style: square;">
                             <li>Вынос и закрепление строительных осей, создание планово-высотного обоснования;</li>
@@ -115,7 +115,7 @@
                             <li>Наблюдение за осадками, кренами зданий и сооружений;</li>
                         </ul>
                         <div class="text-center">
-                            <h2>Наши преимущества:</h2>
+                            <h3>Наши преимущества:</h3>
                         </div>
                         <ul style="list-style: square;">
                             <li>Современное геодезическое оборудование и программы для обработки полученных информационных данных;</li>
@@ -213,11 +213,96 @@
         </section>
 
         <!-- Преимущества -->
-        <section id="about">
+        <section id="prices">
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-1 col-md-10">
                         <div class="text-center">
+                            <h2>Стоимость кадастровых работ</h2>
+                            <img class="img-responsive displayed" src="/images/short.png" alt="Price"/>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th colspan="2">Вид работ</th>
+                                    <th>Цена за ед., руб.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4" class="text-center"><strong>Индивидуальный жилой (садовый) дом</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Подготовка технического плана на индивидуальный жилой дом</td>
+                                    <td>1 этаж</td>
+                                    <td>от 8000</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Подготовка технического плана на индивидуальный жилой дом</td>
+                                    <td>2 этажа</td>
+                                    <td>от 9000</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Подготовка технического плана на индивидуальный жилой дом</td>
+                                    <td>3 этажа</td>
+                                    <td>от 10000</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Подготовка технического плана на хозяйственную постройку (баню, гараж) </td>
+                                    <td>1 этаж</td>
+                                    <td>от 5000</td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="4" class="text-center"><strong>Межевание/вынос границ в натуру</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td colspan="2">Подготовка межевого плана на земельный участок личного пользования</td>
+                                    <td>от 9000</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td colspan="2">Подготовка схемы расположения земельного участка на кадастровом плане территории</td>
+                                    <td>от 6000</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td colspan="2">Вынос границ земельного участка в натуру (разбивка)</td>
+                                    <td>1000 за точку (мин. 4 точки)</td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="4" class="text-center"><strong>Квартира/гараж</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td colspan="2">Подготовка технического плана на квартиру</td>
+                                    <td>от 5000</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td colspan="2">Подготовка схемы расположения, межевого плана и технического плана на гаражный бокс по "гаражной амнистии"</td>
+                                    <td>от 8000</td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="4" class="text-center"><strong>Топографическая съемка</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td colspan="2">Исполнительная / топографическая съемка (со сдачей в Геофонд)</td>
+                                    <td>от 12000 р. (в зависимости от количества необходимых планшетов)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="text-center">
+                            <br>
                             <h2>Преимущества</h2>
                             <img class="img-responsive displayed" src="/images/short.png" alt="Company about"/>
                             <div class="row">

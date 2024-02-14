@@ -47,7 +47,7 @@
                         <li><a href="/#home">Главная</a></li>
                         <li><a href="/#engineering_surveys">Инженерные изыскания</a></li>
                         <li><a href="/#services">Кадастровые работы</a></li>
-                        <li><a href="/#about">Преимущества</a></li>
+                        <li><a href="/#prices">Стоимость</a></li>
                         <li><a href="/#contact">Контакты</a></li>
                     </ul>
                 </div>
@@ -63,6 +63,10 @@
                         <div class="text-center color-elements">
                             <h2>Узнать стоимость кадастровых работ</h2>
                             <h5>При оформлении заявки через сайт <strong>скидка 10%</strong></h5>
+                            <h4>
+                                Стоимость стандартных видов кадастровых работ в разделе
+                                <a href="/#prices" class="link"><strong>Стоимость работ</strong></a>
+                            </h4>
                         </div>
                     </div>
                 </div>
