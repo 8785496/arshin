@@ -39,13 +39,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">
-                        <!--<img src="images/logo.png" alt="company logo" />-->
-                        <span style="color: white">
+                    <div class="navbar-brand">
+                        <span>
                             пр-т К. Маркса, 30/1, оф. 428<br>
-                            г. Новосибирск, тел. 213-63-40
+                            г. Новосибирск, тел. <a href="tel:+73832136340">213-63-40</a>
                         </span>
-                    </a>
+                    </div>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right custom-menu">
@@ -136,9 +135,9 @@
                     <div class="text-center homeport2" style="margin-bottom: 25px"><h2>Услуги</h2></div>
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <a class="btn btn-lg btn-custom btn-noborder-radius" href="/request"
+                            <a class="btn btn-lg btn-custom btn-noborder-radius" href="#prices"
                                style="width: auto; color: white; border: 1px solid white">
-                                Рассчитать стоимость кадастровых работ
+                                Стоимость кадастровых работ
                             </a>
                         </div>
                     </div>
@@ -218,7 +217,7 @@
                 <div class="row">
                     <div class="col-md-offset-1 col-md-10">
                         <div class="text-center">
-                            <h2>Стоимость кадастровых работ</h2>
+                            <h2>Стоимость работ</h2>
                             <img class="img-responsive displayed" src="/images/short.png" alt="Price"/>
                         </div>
                         <table class="table table-bordered">
@@ -292,12 +291,46 @@
                                 </tr>
 
                                 <tr>
-                                    <td colspan="4" class="text-center"><strong>Топографическая съемка</strong></td>
+                                    <td colspan="4" class="text-center"><strong>Геодезические работы</strong></td>
                                 </tr>
                                 <tr>
                                     <td>10</td>
                                     <td colspan="2">Исполнительная / топографическая съемка (со сдачей в Геофонд)</td>
                                     <td>от 12000 р. (в зависимости от количества необходимых планшетов)</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td colspan="2">Исполнительная съемка</td>
+                                    <td>от 2000 р.</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td colspan="2">Вынос строительных осей</td>
+                                    <td>от 2000 р. </td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td colspan="2">Подготовка ГРО</td>
+                                    <td>от 20 000 р. </td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td colspan="2">Определение осадки зданий, сооружений. Высокоточное нивелирование</td>
+                                    <td>расчет по смете</td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="4" class="text-center"><strong>Экспертная деятельность</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td colspan="2">Заключение кадастрового инженера</td>
+                                    <td>от 10 000 р.</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td colspan="2">Землеустроительная (кадастровая) судебная экспертиза</td>
+                                    <td>от 30 000 р.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -441,21 +474,6 @@
             </div>
         </section>
 
-        <!-- Подпишитесь на нас -->
-<!--        <section id="follow-us">-->
-<!--            <div class="container"> -->
-<!--                <div class="text-center height-contact-element">-->
-<!--                    <h2>Подпишитесь на нас</h2>-->
-<!--                </div>-->
-<!--                <img class="img-responsive displayed" src="/images/short.png" alt="short" />-->
-<!--                <div class="text-center height-contact-element">-->
-<!--                    <ul class="list-unstyled list-inline list-social-icons">-->
-<!--                        <li class="active"><a href=""><i class="fa fa-vk social-icons"></i></a></li>-->
-<!--                        <li class="active"><a href=""><i class="fa fa-google-plus social-icons"></i></a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
         <!-- Footer -->
         <footer id="footer">
             <div class="container">

@@ -34,13 +34,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">
-                        <!--<img src="images/logo.png" alt="company logo" />-->
-                        <span style="color: white">
+                    <div class="navbar-brand">
+                        <span>
                             пр-т К. Маркса, 30/1, оф. 428<br>
-                            г. Новосибирск, тел. 213-63-40
+                            г. Новосибирск, тел. <a href="tel:+73832136340">213-63-40</a>
                         </span>
-                    </a>
+                    </div>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right custom-menu">
