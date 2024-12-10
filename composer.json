@@ -1,7 +1,7 @@
 {
     "name": "user/bti",
     "require": {
-        "swiftmailer/swiftmailer": "^5.4",
+        "swiftmailer/swiftmailer": "^6.2",
         "gregwar/captcha": "^1.1"
     },
     "authors": [
